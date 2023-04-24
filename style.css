@@ -1,0 +1,55 @@
+:root {
+    --light-gray: #dadce0;
+    --dark-gray: #494951;
+    --yellow: #fff353;
+    --strong-yellow: #f6c551;
+}
+
+*  {
+
+    /* Reset box model */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: sans-serif;
+    color: var(--dark-gray);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--yellow);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    padding: 24px;
+    font-weight: 700;
+}
+
+main {
+    padding: 30px 30px;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding: 30px 100px;
+    }
+}
+
+main h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card {
+    padding: 0;
+}
+
+.card .card-img-top {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+}
